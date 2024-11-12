@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenght Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-teal-600">
+    <div
+
+      class="overflow-hidden card rounded-2xl w-96 h-80 shadow-lg max-w-lg absolute left-1/2 top-1/2 
+      transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col gap-8 p-8 m-4 bg-gray-200"
+    >
+      <h1 class="text-2xl text-blue-600">Lenght Calculator</h1>
+      <div class="flex flex-col gap-4">
+        <textarea
+          id="words"
+          type="number"
+          rows="5"
+          cols="20"
+          class="h-8 outline-none rounded-lg p-2 border border-blue-500 focus:border-blue-950 transition"
+        ></textarea>
+        <button
+          onclick="Calculate()"
+          class="bg-yellow-200 w-56 p-1 rounded-lg mx-auto hover:text-white hover:bg-orange-600 transition-all
+           duration-150 ease-linear b outline-none hover:border hover:border-solid hover:border-white border-none"
+        >
+          Calculate
+        </button>
+        <p id="output"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
